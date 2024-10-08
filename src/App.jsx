@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <ItemListContainer saludosTienda="¡Bienvenido a Game_Store!" />
+      <ItemListContainer saludosTienda="¡Bienvenido a Gamer_Store!" />
     </div>
   );
 }

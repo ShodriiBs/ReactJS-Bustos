@@ -5,7 +5,7 @@ const NavBar = () => {
     <div className="divPrincipal">
 
         <div className="logo">
-            <h2>Game_Store</h2>
+            <h2>Gamer_Store</h2>
         </div>
 
         <ul className="nav-links">
