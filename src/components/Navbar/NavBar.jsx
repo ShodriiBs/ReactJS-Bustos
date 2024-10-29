@@ -14,22 +14,22 @@ const NavBar = () => {
 
       <ul className="categories">
         <li className="category">
-          <Link to="/category/procesadores">Procesadores</Link>
+          <Link to="/category/procesadores" className="txtCategory">Procesadores</Link>
         </li>
         <li className="category">
-          <Link to="/category/placas-madre">Placa Mother</Link>
+          <Link to="/category/placas-madre" className="txtCategory">Placa Mother</Link>
         </li>
         <li className="category">
-          <Link to="/category/memorias-ram">Memorias RAM</Link>
+          <Link to="/category/memorias-ram" className="txtCategory">Memorias RAM</Link>
         </li>
         <li className="category">
-          <Link to="/category/placas-video">Placas de Vídeo</Link>
+          <Link to="/category/placas-video" className="txtCategory">Placas de Vídeo</Link>
         </li>
         <li className="category">
-          <Link to="/category/almacenamiento">Almacenamiento</Link>
+          <Link to="/category/almacenamiento" className="txtCategory">Almacenamiento</Link>
         </li>
         <li className="category">
-          <Link to="/category/fuentes">Fuentes de Alimentación</Link>
+          <Link to="/category/fuentes" className="txtCategory">Fuentes de Alimentación</Link>
         </li>
       </ul>
 

@@ -4,30 +4,38 @@
     display: flex;
     align-items: center;
     background-color: rgb(37, 37, 37);
-  }
-  .navbar .categories{
+}
+
+.navbar .categories{
     width: 65%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  .categories .category{
+}
+
+.categories .category{
     list-style: none;
     margin: 30px;
-  }
-  
-  .brand{
+}
+
+.txtCategory{
+  color: lightpink;
+}
+
+.brand{
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
-  }
-  .brand .title-brand{
+}
+
+.brand .title-brand{
     padding: 0 10px;
     font-weight: 600;
     font-size: 32px;
-  }
+    color: lightcyan;
+}
   
