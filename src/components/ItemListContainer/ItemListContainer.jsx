@@ -21,11 +21,8 @@ const ItemListContainer = () => {
       .catch((error) => {
         console.error(error)
       })
-      .finally(() => {
-        console.log("Finalizo la promesa")
-      })
+      .finally(() => {})
   }, [idCategory])
-
 
   return (
     <div className="itemlistcontainer">
