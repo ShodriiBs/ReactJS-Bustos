@@ -6,7 +6,7 @@
     background-color: rgb(37, 37, 37);
   }
   .navbar .categories{
-    width: 33.3%;
+    width: 65%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -14,30 +14,20 @@
   }
   .categories .category{
     list-style: none;
+    margin: 30px;
   }
   
   .brand{
-    width: 33.3%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
   }
   .brand .title-brand{
     padding: 0 10px;
     font-weight: 600;
+    font-size: 32px;
   }
   
-  .cartwidget{
-    width: 33.3%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .cartwidget .icon-cartwidget{
-    font-size: 30px;
-  }
-  .cartwidget .number-cartwidget{
-    padding: 0 10px;
-  }

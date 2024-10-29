@@ -1,11 +1,11 @@
 import imgCarrito from "../../assets/carrito.png"
+import "./cartwidget.css"
 
 const CartWidget = () => {
 
-    const styleCarrito = {width: "25px"}
     return (
       <div>
-        <img src={imgCarrito} style={styleCarrito}/>
+        <img src={imgCarrito} className="imgstyle"/>
         <span className="numberFijo">1</span>
       </div>
     );
