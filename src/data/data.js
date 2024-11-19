@@ -118,7 +118,7 @@ const products = [
     },
     {
       id: "PLACAV-0000002",
-      name: " Placa de vídeo ASUS GeForce GTX 1650 4GB",
+      name: "Placa de vídeo ASUS GeForce GTX 1650 4GB",
       description: "Tarjeta compacta y eficiente con 4 GB de VRAM, adecuada para juegos en 1080p. Consumo de energía bajo y compatible con G-Sync.",
       price: 320000,
       stock: 3,
