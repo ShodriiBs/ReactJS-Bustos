@@ -4,6 +4,8 @@ import { Timestamp, collection, addDoc } from "firebase/firestore"
 import db from "../../db/db.js"
 import { Link } from "react-router-dom"
 import "./checkout.css"
+import validateForm from "../../utils/validateForm.js"
+import { toast } from "react-toastify"
 
 const Checkout = () => {
   const [dataForm, setDataForm] = useState({
@@ -21,20 +23,21 @@ const Checkout = () => {
   const handleSubmitForm = async(event) => {
     event.preventDefault()
 
+
     const order = {
       buyer: { ...dataForm },
       products: [...cart],
       date: Timestamp.fromDate(new Date()),
       total: totalPrice()
     }
-    
-    //antes de subir la orden, validamos los datos del formulario
+
     const response = await validateForm(dataForm)
     if(response.status === "success"){
       uploadOrder(order)
     }else{
-      toast.error(response.message)
+      toast.error("Complete todos los campos")
     }
+
   }
 
   const uploadOrder = (newOrder) => {
@@ -44,9 +47,7 @@ const Checkout = () => {
         setIdOrder(response.id)
       })
       .finally(() => {
-        //una vez generada la orden, vaciamos nuestro carrito
         deleteCart()
-        toast.success("orden generada correctamente!")
       })
   }
 
@@ -75,8 +76,8 @@ const Checkout = () => {
           </form>
         ) : (
           <div>
-            <h2>Orden generada correctamente! 😁</h2>
-            <p>Guarde su nro de orden: {idOrder}</p>
+            <h2>¡Orden generada correctamente!</h2>
+            <p>Su número de orden es: {idOrder}. Por favor, guardelo ante cualquier consulta o inconveniente futuro</p>
             <Link to="/" className="button-to-home">Volver al inicio</Link>
           </div>
         )

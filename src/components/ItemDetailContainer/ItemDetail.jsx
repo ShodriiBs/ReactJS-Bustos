@@ -18,13 +18,9 @@ const ItemDetail = ({ product }) => {
 
   return (
     <div className="item-detail">
-      <div className="images-detail-container">
-        <div className="secondary-images">
-        </div>
         <div className="main-image">
-          <img src={product.image} alt="" />
+          <img src={product.image} className="image" alt="" />
         </div>
-      </div>
 
       <div className="text-detail-container">
         <h2 className="title-detail">{product.name}</h2>

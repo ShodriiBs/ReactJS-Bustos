@@ -6,6 +6,8 @@ import { CartProvider } from './context/CartContext'
 import Cart from './components/Cart/Cart'
 import Checkout from './components/Checkout/Checkout'
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
       <BrowserRouter>
         <CartProvider>
           <NavBar />
+          <ToastContainer theme='dark' />
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:idCategory" element={<ItemListContainer />} />

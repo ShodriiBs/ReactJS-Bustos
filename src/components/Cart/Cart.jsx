@@ -22,13 +22,12 @@ const Cart = () => {
       {
         cart.map( (productCart) => (
           <div className="item-cart" key={productCart.id}>
-            <img className="img-item-cart" src={productCart.image} width={100} alt="" />
+            <img className="img-item-cart" src={productCart.image} alt="" />
             <p className="text-item-cart">{productCart.name}</p>
-            <p className="text-item-cart">precio c/u: ${productCart.price}</p>
-            <p className="text-item-cart">cantidad: {productCart.quantity}</p>
-            <p className="text-item-cart">precio parcial: ${ productCart.price * productCart.quantity } </p>
-            <button className="delete-item-cart" onClick={ () => deleteProductById(productCart.id) } >
-            </button>
+            <p className="text-item-cart">Precio c/u: ${productCart.price}</p>
+            <p className="text-item-cart">Cantidad: {productCart.quantity}</p>
+            <p className="text-item-cart">Precio parcial: ${ productCart.price * productCart.quantity } </p>
+            <button className="delete-item-cart" onClick={ () => deleteProductById(productCart.id) } >x</button>
           </div>
         ))
       }
