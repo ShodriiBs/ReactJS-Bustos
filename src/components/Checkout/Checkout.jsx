@@ -77,7 +77,7 @@ const Checkout = () => {
         ) : (
           <div>
             <h2>¡Orden generada correctamente!</h2>
-            <p>Su número de orden es: {idOrder}. Por favor, guardelo ante cualquier consulta o inconveniente futuro</p>
+            <p>Su número de orden es: {idOrder}. Por favor, guardelo ante cualquier consulta o inconveniente futuro.</p>
             <Link to="/" className="button-to-home">Volver al inicio</Link>
           </div>
         )
