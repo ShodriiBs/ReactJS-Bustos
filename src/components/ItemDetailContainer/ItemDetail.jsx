@@ -28,7 +28,6 @@ const ItemDetail = ({ product }) => {
         <p className="text-detail">Precio: ${product.price}</p>
 
         {
-          //Renderizado condicional con un ternario
           showItemCount === true ?
             (<ItemCount stock={product.stock} addProduct={addProduct} />)
             :

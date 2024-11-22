@@ -6,11 +6,6 @@
     padding: 100px 0;
 }
 
-.item-detail .imgDetailContainer{
-  width: 30%;
-  height: 30%;
-}
-
 .image{
   height: 500px;
   width: 500px;
@@ -20,7 +15,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 0 60px;
 }
 
 .title-detail{
@@ -33,4 +28,22 @@
     font-style: italic;
     font-size: 1.3rem;
     color: rgb(218, 218, 218);
+}
+
+.button-end-buy{
+  padding: 10px 0;
+  background-color: rgb(42, 42, 42);
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.button-end-buy:hover{
+  border: 1px solid lightpink;
+  color: lightpink;
+  cursor: pointer;
 }

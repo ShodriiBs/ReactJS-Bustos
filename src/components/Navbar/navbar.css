@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .categories .category{
@@ -20,7 +21,11 @@
 }
 
 .txtCategory{
-  color: lightpink;
+  color: white;
+}
+
+.txtCategory:hover{
+    color: lightpink
 }
 
 .brand{

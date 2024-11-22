@@ -1,23 +1,19 @@
 import { createContext, useState } from "react";
 
-//creamos un contexto para el carrito
 const cartContext = createContext()
 
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([])
 
   const addProductInCart = (newProduct) => {
-    //comprobar si el producto nuevo ya esta en el carrito
     const tempCart = [...cart]
     const indexProduct = cart.findIndex( (productCart)=> productCart.id === newProduct.id )
 
     if(indexProduct >= 0){
-      //sumar cantidades
       tempCart[indexProduct].quantity = tempCart[indexProduct].quantity + newProduct.quantity
 
       setCart(tempCart)
     }else{
-      //agregar como producto nuevo
       setCart( [ ...cart, newProduct ] )
     }
   }

@@ -6,11 +6,10 @@ import "./cart.css"
 const Cart = () => {
   const { cart, totalPrice, deleteProductById, deleteCart } = useContext(cartContext)
 
-  //Early return
   if( cart.length === 0 ){
     return(
       <div className="empty-cart">
-        <h2 className="title-empty-cart">Oppps...No hay productos en el carrito 😥</h2>
+        <h2 className="title-empty-cart">No hay productos en el carrito.</h2>
         <Link to="/" className="button-home-empty-cart" >Volver al inicio</Link>
       </div>
     )
@@ -34,8 +33,10 @@ const Cart = () => {
 
       <div className="info-cart">
         <p className="text-info-cart">Precio total: ${totalPrice()}</p>
+        <div className="buttons-configure">
         <button className="button-delete-cart" onClick={deleteCart} >Vaciar carrito</button>
-        <Link to="/checkout">Continuar con mi compra</Link>
+        <Link to="/checkout" className="button-continue-buy">Continuar con mi compra</Link>
+        </div>
       </div>
     </div>
   )

@@ -1,3 +1,12 @@
 .number-cartwidget{
-    margin-left: 5px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: lightpink;
+    vertical-align: auto;
+}
+
+.imgstyle{
+    display: inline-flex;
+    width: 30px;
+    margin-left: 20px;
 }

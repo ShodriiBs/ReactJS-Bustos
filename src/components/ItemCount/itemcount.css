@@ -2,6 +2,7 @@
     width: 200px;
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
   }
   .item-count .controls-count{
     display: flex;
@@ -10,30 +11,31 @@
     padding: 10px 0;
   }
   .controls-count button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(42, 42, 42);
-    border: 1px solid white;
-    border-radius: 5px;
+    border: 2px solid white;
+    border-radius: 25px;
     color: white;
   }
   .controls-count button:hover{
-    border: 1px solid #2ECC71;
+    border: 2px solid lightpink;
     cursor: pointer;
   }
   .controls-count p{
     font-weight: bold;
+    font-size: 24px;
   }
   
   .button-add-count{
     padding: 10px 0;
     background-color: rgb(42, 42, 42);
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     color: white;
   }
   .button-add-count:hover{
-    border: 1px solid #2ECC71;
-    color: #2ECC71;
+    border: 2px solid lightpink;
+    color: lightpink;
     cursor: pointer;
   }

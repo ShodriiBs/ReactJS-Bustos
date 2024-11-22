@@ -56,7 +56,7 @@ const Checkout = () => {
       {
         idOrder === null ? (
           <form onSubmit={handleSubmitForm} className="form-checkout" >
-            <h2>Checkout</h2>
+            <h2 className="title-checkout">¡Completá con tus datos!</h2>
             <div className="content-input">
               <label className="label">Nombre completo: </label>
               <input type="text" name="fullname" value={dataForm.fullname} onChange={handleChangeInput} />
